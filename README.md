@@ -31,3 +31,10 @@ Exercícios da lista 3:
 - [Exercício 8 - lista_div_amplitude.c](src/lista_div_amplitude.c)
 - [Exercício 9 - soma_matriz.c](src/soma_matriz.c)
 
+## Lista 4
+Exercício da lita 4:
+
+- [Exercício 1 - fatorial.c](src/fatorial.c)
+- [Exercício 2 - combinacao.c](src/combinacao.c)
+- [Exercício 3 - binomio_de_newton.c](src/binomio_de_newton.c)
+- [Exercício 4 - soma_divisores.c](src/soma_divisores.c)
