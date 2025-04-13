@@ -18,3 +18,16 @@ Exercícios da lista 2:
 - [Exercício 6 - mdc.c](src/mdc.c)
 - [Exercício 7 - e_primo.c](src/e_primo.c)
 
+## Lista 3
+Exercícios da lista 3:
+
+- [Exercício 1 - fatorial.c](src/fatorial.c)
+- [Exercício 2 - soma_dos_naturais.c](src/soma_dos_naturais.c)
+- [Exercício 3 - soma_em_diagonal.c](src/soma_em_diagonal.c)
+- [Exercício 4 - soma_dos_inversos_2eN.c](src/soma_dos_inversos_2eN.c)
+- [Exercício 5 - pi.c](src/pi.c)
+- [Exercício 6 - cosseno.c](src/cosseno.c)
+- [Exercício 7 - lista_em_modulo.c](src/lista_em_modulo.c)
+- [Exercício 8 - lista_div_amplitude.c](src/lista_div_amplitude.c)
+- [Exercício 9 - soma_matriz.c](src/soma_matriz.c)
+
