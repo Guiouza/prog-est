@@ -46,3 +46,4 @@ Exercício da lita 5:
 - [Exercício 2 - fatorial.c](src/fatorial.c)
 - [Exercício 3 - potencia.c](src/potencia.c)
 - [Exercício 4 - fibonacci.c](src/fibonacci.c)
+- [Exercício 5 - combinacao.c](src/combinacao.c)
