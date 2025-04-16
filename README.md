@@ -38,3 +38,8 @@ Exercício da lita 4:
 - [Exercício 2 - combinacao.c](src/combinacao.c)
 - [Exercício 3 - binomio_de_newton.c](src/binomio_de_newton.c)
 - [Exercício 4 - soma_divisores.c](src/soma_divisores.c)
+
+## Lista 5
+Exercício da lita 5:
+
+- [Exercício 1 - soma_dos_naturais.c](src/soma_dos_naturais.c)
