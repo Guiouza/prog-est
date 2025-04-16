@@ -1,6 +1,13 @@
 #include<stdio.h>
 #include<locale.h>
 
+unsigned int rec_sum(unsigned int n)
+{
+    if (n <= 1)
+        return n;
+    return rec_sum(n-1)+n;
+}
+
 int main(int argc, char const *argv[])
 {
     setlocale(LC_ALL, ".utf8");
@@ -35,5 +42,6 @@ int main(int argc, char const *argv[])
     } while (i < number);
     printf("A soma dos %u primeiros naturais é: %u.\n", number, soma);
 
+    printf("A soma dos %u primeiros naturais é: %u.\n", number, rec_sum(number));
     return 0;
 }

@@ -1,6 +1,12 @@
 #include<stdio.h>
 #include<locale.h>
 
+unsigned int rec_factorial(unsigned int n)
+{
+    if (n <= 1)
+        return 1;
+    return rec_factorial(n-1) * n;
+}
 
 int main(int argc, char const *argv[])
 {
@@ -31,6 +37,7 @@ int main(int argc, char const *argv[])
     } while (i <= number); // calcula o produto depois adiciona 1 ao i.
 
     printf("O fatorial de %u é: %u.\n", number, fatorial);
-    
+
+    printf("O fatorial de %u é: %u.\n", number, rec_factorial(number));
     return 0;
 }

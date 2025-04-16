@@ -15,6 +15,12 @@ unsigned int combinacao_nk(unsigned int n, unsigned int k) {
     return combinacao;
 }
 
+double rec_combinacao_nk(unsigned int n, unsigned int k) {
+    if (k == 0 || n <= k)
+        return 1;
+    return rec_combinacao_nk(n-1, k-1) * n/(double)k;
+}
+
 int main(int argc, char const *argv[])
 {
     setlocale(LC_ALL, ".utf8");
@@ -31,5 +37,7 @@ int main(int argc, char const *argv[])
     unsigned int combinacao = combinacao_nk(n, k);
 
     printf("A combinacao de %u a %u é %u.\n", n, k, combinacao);
+
+    printf("A combinacao de %u a %u é %u.\n", n, k, rec_combinacao_nk(n, k));
     return 0;
 }
