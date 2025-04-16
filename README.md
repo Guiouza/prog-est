@@ -45,3 +45,4 @@ Exercício da lita 5:
 - [Exercício 1 - soma_dos_naturais.c](src/soma_dos_naturais.c)
 - [Exercício 2 - fatorial.c](src/fatorial.c)
 - [Exercício 3 - potencia.c](src/potencia.c)
+- [Exercício 4 - fibonacci.c](src/fibonacci.c)
