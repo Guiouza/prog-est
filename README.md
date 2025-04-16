@@ -43,3 +43,4 @@ Exercício da lita 4:
 Exercício da lita 5:
 
 - [Exercício 1 - soma_dos_naturais.c](src/soma_dos_naturais.c)
+- [Exercício 2 - fatorial.c](src/fatorial.c)
