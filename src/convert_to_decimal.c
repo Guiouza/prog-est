@@ -2,7 +2,6 @@
 #include <locale.h>
 #include <stdlib.h>
 
-
 unsigned int converter_para_decimal(unsigned int* numero_beta, unsigned int beta, unsigned int algarismos) {
     if (algarismos == 1) {
         return *numero_beta;
