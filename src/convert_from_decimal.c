@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
-#include <string.h>
 
 #define BUFFER_SIZE 5
 #define uint_size sizeof(unsigned int)
