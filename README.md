@@ -47,3 +47,10 @@ Exercício da lita 5:
 - [Exercício 3 - potencia.c](src/potencia.c)
 - [Exercício 4 - fibonacci.c](src/fibonacci.c)
 - [Exercício 5 - combinacao.c](src/combinacao.c)
+
+## Aula 17/04/2025
+Exercícios da aula do dia 17/04:
+
+- [Exercício 1 - conta_letras.c](src/conta_letras.c)
+- [Exercício 2 - tamanho_str.c](src/tamanho_str.c)
+- [Exercício 3 - junta_str.c](src/junta_str.c)
