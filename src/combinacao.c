@@ -38,6 +38,6 @@ int main(int argc, char const *argv[])
 
     printf("A combinacao de %u a %u é %u.\n", n, k, combinacao);
 
-    printf("A combinacao de %u a %u é %u.\n", n, k, rec_combinacao_nk(n, k));
+    printf("A combinacao de %u a %u é %g.\n", n, k, rec_combinacao_nk(n, k));
     return 0;
 }
