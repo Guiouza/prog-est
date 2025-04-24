@@ -54,3 +54,7 @@ Exercícios da aula do dia 17/04:
 - [Exercício 1 - conta_letras.c](src/conta_letras.c)
 - [Exercício 2 - tamanho_str.c](src/tamanho_str.c)
 - [Exercício 3 - junta_str.c](src/junta_str.c)
+
+# Desafio da Aula 22042025
+
+- [Exercício 1 - hanoi.c](/src/hanoi.c)
