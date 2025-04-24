@@ -7,7 +7,7 @@
 int main(int argc, char const *argv[])
 {
     setlocale(LC_ALL, ".utf8");
-    
+
     char str1[BUFFER_SIZE] = "";
     char str2[BUFFER_SIZE] = "";
 
@@ -17,6 +17,6 @@ int main(int argc, char const *argv[])
     gets(str2);
 
     printf("str1+str2 = %s.\n", strcat(str1, str2));
-        
+
     return 0;
 }
