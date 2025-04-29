@@ -58,3 +58,12 @@ Exercícios da aula do dia 17/04 sobre a biblioteca `string.h`:
 # Desafio da Aula 22/04/2025
 
 - [Exercício 1 - hanoi.c](/src/hanoi.c)
+
+# Lista 4:
+Exercícios da lista 4:
+
+- [Exercício 1 - .c](/src/)
+- [Exercício 2 - .c](/src/)
+- [Exercício 3 - .c](/src/)
+- [Exercício 4 - .c](/src/)
+- [Exercício 5 - .c](/src/)
