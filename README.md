@@ -31,16 +31,16 @@ Exercícios da lista 3:
 - [Exercício 8 - lista_div_amplitude.c](src/lista_div_amplitude.c)
 - [Exercício 9 - soma_matriz.c](src/soma_matriz.c)
 
-## Lista 4
-Exercício da lita 4:
+## Aula 10/04/2025
+Exercícios da aula do dia 10/04 sobre as estruturas `for`, `while` e `do while`:
 
 - [Exercício 1 - fatorial.c](src/fatorial.c)
 - [Exercício 2 - combinacao.c](src/combinacao.c)
 - [Exercício 3 - binomio_de_newton.c](src/binomio_de_newton.c)
 - [Exercício 4 - soma_divisores.c](src/soma_divisores.c)
 
-## Lista 5
-Exercício da lita 5:
+## Aula 15/04/2025
+Exercícios da aula do dia 15/04 sobre funções e recursão:
 
 - [Exercício 1 - soma_dos_naturais.c](src/soma_dos_naturais.c)
 - [Exercício 2 - fatorial.c](src/fatorial.c)
@@ -49,12 +49,12 @@ Exercício da lita 5:
 - [Exercício 5 - combinacao.c](src/combinacao.c)
 
 ## Aula 17/04/2025
-Exercícios da aula do dia 17/04:
+Exercícios da aula do dia 17/04 sobre a biblioteca `string.h`:
 
 - [Exercício 1 - conta_letras.c](src/conta_letras.c)
 - [Exercício 2 - tamanho_str.c](src/tamanho_str.c)
 - [Exercício 3 - junta_str.c](src/junta_str.c)
 
-# Desafio da Aula 22042025
+# Desafio da Aula 22/04/2025
 
 - [Exercício 1 - hanoi.c](/src/hanoi.c)
