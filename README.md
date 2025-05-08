@@ -55,11 +55,11 @@ Exercícios da aula do dia 17/04 sobre a biblioteca `string.h`:
 - [Exercício 2 - tamanho_str.c](src/tamanho_str.c)
 - [Exercício 3 - junta_str.c](src/junta_str.c)
 
-# Desafio da Aula 22/04/2025
+## Desafio da Aula 22/04/2025
 
 - [Exercício 1 - hanoi.c](/src/hanoi.c)
 
-# Lista 4:
+## Lista 4:
 Exercícios da lista 4:
 
 - [Exercício 1 - nota_e_media.c](/src/nota_e_media.c)
@@ -67,3 +67,28 @@ Exercícios da lista 4:
 - [Exercício 3 - resolver_eq_lienar.c](/src/resolver_eq_lienar.c)
 - [Exercício 4 - letras_crescente.c](/src/letras_crescente.c)
 - [Exercício 5 - limpar_lista.c](/src/limpar_lista.c)
+
+# Como Compilar os Programas
+
+Eu uso o compilador Microsoft Visual C++ usando no Visual Studio.
+
+## Baixando o MSVC
+Abra um terminal do windows, para abrir pesquise `cmd` na barra de pesquisa.
+Execute o comando:
+
+```pwsh
+winget install Microsoft.VisualStudio.2022.BuildTools --force --override "--wait --passive --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows11SDK.26100"
+```
+
+Esse comando iniciará a baixar o instalador do Visual Studio, Visual Studio Installer, que por sua vez instalará o MSVC e um terminal de desenvolvedor.
+
+## Compilando o Código
+Um terminal será instalado no seu computador com o nome "Developer Command Prompt for VS 2022".
+Abra o terminal e navegue até a pasta com os arquivos de C.
+Para compilar um arquivo `main.c` para `main.exe` use o comando:
+```pwsh
+cl /Zi /EHsc /nologo /Fe"main.exe" "main.c"
+```
+
+## Desinstalando o Compilador
+Abra o Visual Studio Installer e desinstale o MSVC por lá. Depois é desinstale o terminal e o instalador do Visual Studio como se desinstalaria qualquer outros aplicativo do Windows.
