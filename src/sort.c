@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 
-typedef double* (*__sort_func) (double*, size_t);
+typedef double* (*__sort_func) (double*, size_t); // tipo funcao de ordenacao
 
 double* bsort(double* list, size_t len) {
     int i, j;
@@ -79,29 +79,59 @@ double* msort(double* list, size_t len)
     return list_orded;
 }
 
+double* isort(double* list, size_t len) {
+    double holder, key;
+    // Começa com o segundo item da lista até o último
+    for (size_t i = 1; i < len; i++)
+    {
+        // Itera a cada elemento anterior ao item a ser ordenado
+        for (size_t j = 1; j <= i; j++)
+        {
+            // Se o o anterior for maior troca de lugar
+            if (list[i-j] > list[i-j+1])
+            {
+                holder = list[i-j];
+                list[i-j] = list[i-j+1];
+                list[i-j+1] = holder;
+            }
+            else break; // Se não for passa para o próximo item
+        }
+    }
+    return list;
+}
+
 void test_sort(size_t list_size, __sort_func sort_func) {
     double* lista = malloc(sizeof(double)*list_size);
     double* lista_ordenada;
 
-    for (size_t n = 0; n < list_size; n++)
-    scanf_s("%lf", lista+n);
+    for (size_t n = 0; n < list_size; n++) {
+        printf("%zu° valor: ", n);
+        scanf_s("%lf", lista+n);
+    }
     
     lista_ordenada = sort_func(lista, list_size);
     
-    printf("==================\n");
     for (size_t n = 0; n < list_size; n++)
-        printf("%g\n", lista_ordenada[n]);
+        printf("%g, ", lista_ordenada[n]);
 
-    printf("==================\n");
+    printf("\b\b  \n==================\n");
 }
 
 int main(int argc, char const *argv[])
 {
     setlocale(LC_ALL, ".utf8");
-    
+
+    printf("Bubble Sort:\n");
     test_sort(5, &bsort);
+
+    printf("Selection Sort:\n");
     test_sort(5, &ssort);
+
+    printf("Insertion Sort:\n");
+    test_sort(5, &isort);
+
+    printf("Merge Sort:\n");
     test_sort(5, &msort);
-    
+
     return 0;
 }

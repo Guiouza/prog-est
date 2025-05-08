@@ -68,6 +68,9 @@ Exercícios da lista 4:
 - [Exercício 4 - letras_crescente.c](/src/letras_crescente.c)
 - [Exercício 5 - limpar_lista.c](/src/limpar_lista.c)
 
+# Algorítmos de Ordenação: Aula 08/05/2025
+- [Exercício 1 - insertion sort](src/sort.c)
+
 # Como Compilar os Programas
 
 Eu uso o compilador Microsoft Visual C++ usando no Visual Studio.
