@@ -1,3 +1,6 @@
+# Define o diretório de origem dos arquivos .c
+$diretorioFonte = "src"
+
 # Solicita o nome do arquivo .c ao usuário
 $nomeArquivoC = Read-Host "Digite o nome do arquivo .c (ex: meu_codigo.c)"
 
@@ -13,13 +16,19 @@ if (-not (Test-Path -Path $diretorioSaida -PathType Container)) {
     New-Item -Path $diretorioSaida -ItemType Directory | Out-Null
 }
 
-# Define o caminho completo para o arquivo .c
-$caminhoArquivoC = Get-Location | Join-Path -ChildPath $nomeArquivoC
+# Define o caminho completo para o arquivo .c dentro do diretório src
+$caminhoArquivoC = Get-Location | Join-Path -ChildPath "$diretorioFonte/$nomeArquivoC"
 
 # Define o caminho completo para o arquivo executável de saída
 $caminhoArquivoExe = Join-Path -Path $diretorioSaida -ChildPath "$nomeArquivoBase.exe"
 
-# Verifica se o arquivo .c existe
+# Verifica se o diretório src existe
+if (-not (Test-Path -Path $diretorioFonte -PathType Container)) {
+    Write-Error "Erro: O diretório de origem '$diretorioFonte' não foi encontrado."
+    exit 1
+}
+
+# Verifica se o arquivo .c existe dentro do diretório src
 if (-not (Test-Path -Path $caminhoArquivoC -PathType Leaf)) {
     Write-Error "Erro: O arquivo '$caminhoArquivoC' não foi encontrado."
     exit 1
@@ -35,7 +44,7 @@ if (-not $clPath) {
 }
 
 # Comando para compilar o arquivo .c
-$comandoCompilacao = "$clPath /Zi /EHsc /nologo /Fe:`"$caminhoArquivoExe`" `"$caminhoArquivoC`""
+$comandoCompilacao = "$clPath /Fe:`"$caminhoArquivoExe`" `"$caminhoArquivoC`""
 
 Write-Host "Compilando: '$caminhoArquivoC' -> '$caminhoArquivoExe'"
 
