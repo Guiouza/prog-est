@@ -21,6 +21,7 @@ $caminhoArquivoC = Get-Location | Join-Path -ChildPath "$diretorioFonte/$nomeArq
 
 # Define o caminho completo para o arquivo executável de saída
 $caminhoArquivoExe = Join-Path -Path $diretorioSaida -ChildPath "$nomeArquivoBase.exe"
+$caminhoArquivoObj = Join-Path -Path $diretorioSaida -ChildPath "$nomeArquivoBase.obj"
 
 # Verifica se o diretório src existe
 if (-not (Test-Path -Path $diretorioFonte -PathType Container)) {
@@ -44,7 +45,7 @@ if (-not $clPath) {
 }
 
 # Comando para compilar o arquivo .c
-$comandoCompilacao = "$clPath /Fe:`"$caminhoArquivoExe`" `"$caminhoArquivoC`""
+$comandoCompilacao = "$clPath /Zi /EHsc /nologo /Fo:`"$caminhoArquivoObj`" /Fe:`"$caminhoArquivoExe`" `"$caminhoArquivoC`""
 
 Write-Host "Compilando: '$caminhoArquivoC' -> '$caminhoArquivoExe'"
 
