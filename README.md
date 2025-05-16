@@ -86,12 +86,8 @@ winget install Microsoft.VisualStudio.2022.BuildTools --force --override "--wait
 Esse comando iniciará a baixar o instalador do Visual Studio, Visual Studio Installer, que por sua vez instalará o MSVC e um terminal de desenvolvedor.
 
 ## Compilando o Código
-Um terminal será instalado no seu computador com o nome "Developer Command Prompt for VS 2022".
-Abra o terminal e navegue até a pasta com os arquivos de C.
-Para compilar um arquivo `main.c` para `main.exe` use o comando:
-```pwsh
-cl /Zi /EHsc /nologo /Fe"main.exe" "main.c"
-```
+Eu programei um script de powershell para facilitar a compilação e o teste dos programas. Basta abrir o terminal de desenvolverdor: Vá em iniciar > Pesquiser por `dev` > Abra o ` Developer PowerShell for VS 2022` > Navegue até o diretório do repositório `prog-est/` > Execute o comando `./run` e siga as instruções do programa.
+Basta inserir o nome do arquivo que quer compilar, por exemplo: `hanoi.c`. Lembrando que todos os programas estão listados na página do github separados por lista e por nome. O script irá compilar e executar o programa, nesse caso `hanoi.exe`, automaticamente para você.
 
 ## Desinstalando o Compilador
 Abra o Visual Studio Installer e desinstale o MSVC por lá. Depois é desinstale o terminal e o instalador do Visual Studio como se desinstalaria qualquer outros aplicativo do Windows.
