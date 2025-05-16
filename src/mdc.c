@@ -1,7 +1,7 @@
 #include <locale.h>
 #include <stdio.h>
 
-int mdc(a, b) {
+int mdc(int a, int b) {
     unsigned int resto = a % b;
     if (resto == 0)
         return b;
@@ -18,6 +18,6 @@ int main(int argc, char const *argv[])
     printf("b: ");
     scanf("%u", &b);
 
-    printf("MDC(a, b) = MDC(%u, %u) = %u", a, b, mdc(a, b));
+    printf("MDC(a, b) = MDC(%u, %u) = %u.\n", a, b, mdc(a, b));
     return 0;
 }
