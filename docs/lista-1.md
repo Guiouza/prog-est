@@ -5,12 +5,12 @@ Abaixo estão listados os exercícios e os arquivos a eles associados:
 
 | Exercício | Programa em C |
 | :- | :- | 
-| Exercício 1 | `src/lista-1/convert_to_int.c` |
-| Exercício 2 | `src/lista-1/int_to_any_base.c` |
-| Exercício 3 | `src/lista-1/float_to_any_base.c` |
+| Exercício 1 | [`src/lista-1/convert_to_int.c`](src/lista-1/convert_to_int.c) |
+| Exercício 2 | [`src/lista-1/int_to_any_base.c`](src/lista-1/int_to_any_base.c) |
+| Exercício 3 | [`src/lista-1/float_to_any_base.c`](src/lista-1/float_to_any_base.c) |
 
 > [!NOTE]
-> Os arquivos foram nomeados de modo arbitrário1
+> Os arquivos foram nomeados de modo arbitrário.
 > Use o pdf da lista linkado a baixo para saber qual exercício é qual:
 > [Lista-1: Trabalho_01a.pdf](https://github.com/user-attachments/files/20428064/Trabalho_01a.pdf)
 
