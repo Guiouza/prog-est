@@ -6,7 +6,7 @@ Esse projeto foi criado para armazenar as soluções dos exercícios do curso 21
 | Listas e Aulas | Diretório |
 | :- | :- | 
 | Lista - 1 | [src/lista-1/](docs/lista-1.md) |
-| Lista - 2 | [src/lista-1/](docs/lista-2.md) |
+| Lista - 2 | [src/lista-2/](docs/lista-2.md) |
 
 ## Sobre o DEV-C++
 Não recomendo o uso dessa IDE, é possível utilizá-la sim para abrir os arquivos `.c` e compilálos individualmente. Mas há problemas quanto ao uso de caracteres utf-8 e sobre a versão do C11 e C99 que eu não sei como resolver.
