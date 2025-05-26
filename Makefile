@@ -4,6 +4,9 @@ CFLAGS = -g
 SRCDIR = src
 OUTDIR = out
 
+LIBDIR = src/lib
+LIBFILES = $(wildcard $(LIBDIR)/*.c)
+
 # --- Regras para compilar listas específicas ---
 
 # Padrão genérico para compilar uma lista
@@ -32,7 +35,7 @@ lista-%:
 # Padrão genérico para compilar arquivos de C da pasta SRCDIR em binário na pasta OUTDIR
 # Ex: make out/lista-x/exercicio -> Compilando exercicio.c para out/lista-x/exercicio
 $(OUTDIR)/% : $(SRCDIR)/%.c
-	$(CC) $(CFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $< $(LIBFILES) -I$(LIBDIR) -o $@
 
 # --- Tasks Auxiliares ---
 
