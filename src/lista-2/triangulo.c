@@ -5,7 +5,7 @@
 #define ISOCELES 1
 #define ESCALENO 2
 
-int verifica_triangulo(double a, double b, double c)
+int e_triangulo(double a, double b, double c)
 {
 	int e_triangulo = 1;
 	e_triangulo &= c < a + b;
@@ -15,12 +15,10 @@ int verifica_triangulo(double a, double b, double c)
 	return e_triangulo;
 }
 
-int classifica_triangulo(int a, int b, int c)
+int classificar_triangulo(int a, int b, int c)
 {
-	if (a == b && b == c)
-		return EQUILATERO;
-	if (a == b || b == c || a == c)
-		return ISOCELES;
+	if (a == b && b == c) return EQUILATERO;
+	if (a == b || b == c || a == c) return ISOCELES;
 	return ESCALENO;
 }
 
@@ -35,17 +33,19 @@ int main(int argc, char *argv[])
 	}
 	while(a < 0 && b < 0 && c < 0);
 	
-	if (!verifica_triangulo(a, b, c))
+	if (!e_triangulo(a, b, c))
 	{
 		printf("Não é triângulo");
 		return 0;
 	}
 
 	printf("É um triângulo ");
-	switch (classifica_triangulo(a, b, c))
+	switch (classificar_triangulo(a, b, c))
 	{
 	case EQUILATERO:
 		printf("equilátero e ");
+		// Sem break porque o triângulo equilátero é também isóceles
+		// Desse modo irá imprimir "isóceles" também
 	case ISOCELES:
 		printf("isóceles");
 		break;
