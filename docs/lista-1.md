@@ -12,7 +12,7 @@ Abaixo estão listados os exercícios e os arquivos a eles associados:
 > [!NOTE]
 > Os arquivos foram nomeados de modo arbitrário.
 > Use o pdf da lista linkado a baixo para saber qual exercício é qual:
-> [Lista-1: Trabalho_01a.pdf](https://github.com/user-attachments/files/20428064/Trabalho_01a.pdf)
+> [Lista-1: Trabalho_01a.pdf](https://github.com/user-attachments/files/20445451/Lista_exercicios_fev_2025.pdf)
 
 ## Build:
 Utilizando o Make:
