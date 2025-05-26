@@ -1,26 +1,7 @@
+#include "my_math.h"
+
 #include <stdio.h>
 #include <locale.h>
-
-double fabs(double x) {
-	if (x < 0) {
-		return -x;
-	}
-	return x;
-}
-
-double sqrt(double x) {
-	if (x == 0.0) return 0.0; // raiz quadrada de zero é zero
-
-	double result = 1.0; // valor inicial
-	static const double epsilon = 0.000001; // precisão desejada
-
-	// Método de Newton para calcular a raiz quadrada
-	while (fabs(result * result - x) > epsilon)
-	{
-		result = (result + x / result) / 2.0;
-	}
-	return result;
-}
 
 int main(int argc, char *argv[]) {	
 	setlocale(LC_ALL, ".UTF8");
