@@ -7,13 +7,14 @@ OUTDIR = out
 LIBDIR = src/lib
 LIBFILES = $(wildcard $(LIBDIR)/*.c)
 
-# --- Regras para compilar listas específicas ---
+EXERCICIOS = $(patsubst src/%/, %, $(dir $(wildcard src/*/ )))	
+
+# --- Regras para compilar listas e atividades específicas ---
 
 # Padrão genérico para compilar uma lista
-# Ex: make lista-1, make lista-2, etc.
-lista-%:
+# Ex: make lista-1, make lista-2, make atividade-1-P2 e etc.
+$(EXERCICIOS):
 	@echo "Compilando a $@..."
-	@echo ""
 
 	$(eval LISTA_SRCDIR = $(SRCDIR)/$@)
 	$(eval LISTA_OUTDIR = $(OUTDIR)/$@)
@@ -27,10 +28,11 @@ lista-%:
 	@echo "Compilação de $@ concluída."
 	@echo ""
 
-	@echo -ne $(foreach target, $(TARGETS),\
-		"\bExecute: " && echo -nE "'$(target)' " && echo -ne "para testar.\n"\
-	)
-
+	@echo "Para executar os programas compilados, use:"
+	@echo "  cd $(LISTA_OUTDIR)"
+	@echo "  ls"
+	@echo "  ./<nome_do_programa>"
+	@echo ""
 
 # Padrão genérico para compilar arquivos de C da pasta SRCDIR em binário na pasta OUTDIR
 # Ex: make out/lista-x/exercicio -> Compilando exercicio.c para out/lista-x/exercicio
