@@ -130,6 +130,11 @@ int main(int argc, char const *argv[])
         }
     }
 
+    // ---- Libera a memória alocada para os candidatos ----
+    for (size_t j = 0; j < num_candidatos; j++)
+    {
+        free_candidato(lista_de_candidatos[j]);
+    }
     fclose(contagem_file);
     return 0;
 }

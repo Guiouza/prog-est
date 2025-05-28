@@ -113,7 +113,7 @@ int main(int argc, char const *argv[])
         }
 
         // ---- Solicita o voto do usuário ----
-        unsigned int voto;
+        unsigned int voto = 0;
         printf("Digite o número do candidato para votar (ou '0' para sair): ");
         scanf("%u", &voto);
 
