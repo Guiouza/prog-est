@@ -37,7 +37,7 @@ nmake lista-3
 
 # Testando:
 Para executar o programa faça a build da lista como descrito na sessão anterior e execute:
-```
+```bash
 ./out/lista-3/fatorial              # Para executar o exercício 1
 ./out/lista-3/soma_dos_naturais     # Para executar o exercício 2
 ./out/lista-3/soma_em_diagonal      # Para executar o exercício 3
