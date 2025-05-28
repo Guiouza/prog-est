@@ -33,7 +33,7 @@ nmake lista-1
 
 # Testando:
 Para executar o programa faça a build da lista como descrito na sessão anterior e execute:
-```
+```bash
 ./out/convert_to_int        # Para executar o exercício 1
 ./out/int_to_any_base       # Para executar o exercício 1
 ./out/float_to_any_base     # Para executar o exercício 1

@@ -34,7 +34,7 @@ nmake lista-2
 
 # Testando:
 Para executar o programa faça a build da lista como descrito na sessão anterior e execute:
-```
+```bash
 ./out/baskara       # Para executar o exercício 1
 ./out/menor_e_maior # Para executar o exercício 2
 ./out/triangulo     # Para executar o exercício 3
