@@ -14,7 +14,7 @@ int e_primo(unsigned int x) {
     // Isso é necessário para evitar por exemplo sqrt(4) = 1.9 => sqrt_x = 1
     // e se sqrt_x = 1, não conseguimos fazer o loop.
 
-    for (int i = 2; i <= sqrt; i += 2)
+    for (int i = 2; i <= sqrt_x; i += 2)
     {
         // Se x for divisível por i, não é primo
         if (x % i != 0) return 0;

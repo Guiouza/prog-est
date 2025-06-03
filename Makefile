@@ -7,7 +7,8 @@ OUTDIR = out
 LIBDIR = $(SRCDIR)/lib
 LIBFILES = $(wildcard $(LIBDIR)/*.c)
 
-EXERCICIOS = $(patsubst $(SRCDIR)/%/, %, $(dir $(wildcard $(SRCDIR)/*/ )))
+EXERDIR = $(SRCDIR)/atividades
+EXERCICIOS = $(patsubst $(EXERDIR)/%/, %, $(dir $(wildcard $(EXERDIR)/*/ )))
 
 all:
 	make $(EXERCICIOS)
@@ -19,7 +20,7 @@ all:
 $(EXERCICIOS):
 	@echo "Compilando a $@..."
 
-	$(eval LISTA_SRCDIR = $(SRCDIR)/$@)
+	$(eval LISTA_SRCDIR = $(EXERDIR)/$@)
 	$(eval LISTA_OUTDIR = $(OUTDIR)/$@)
 
 	@mkdir -p $(LISTA_OUTDIR)
@@ -39,7 +40,7 @@ $(EXERCICIOS):
 
 # Padrão genérico para compilar arquivos de C da pasta SRCDIR em binário na pasta OUTDIR
 # Ex: make out/lista-x/exercicio -> Compilando exercicio.c para out/lista-x/exercicio
-$(OUTDIR)/% : $(SRCDIR)/%.c
+$(OUTDIR)/% : $(EXERDIR)/%.c
 	$(CC) $(CFLAGS) $< $(LIBFILES) -I$(LIBDIR) -o $@
 
 # --- Tasks Auxiliares ---
@@ -47,8 +48,9 @@ $(OUTDIR)/% : $(SRCDIR)/%.c
 .PHONY: help
 help:
 	@echo "Uso:"
+	@echo "  make   					  - Compila todas as atividades"
 	@echo "  make lista-<nome_da_lista>   - Compila todos os arquivos .c da lista especificada (ex: make lista-1)"
-	@echo "  make clean                   - Remove todos os arquivos compilados do diretório 'out/'"
+	@echo "  make clean                   - Remove todos os arquivos compilados do diretório 'out/'."
 	@echo "  make help                    - Exibe esta mensagem de ajuda"
 
 .PHONY: clean
