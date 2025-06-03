@@ -1,1 +1,4 @@
+# Build folder
 out/
+# Vs code configs
+.vscode/
