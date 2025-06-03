@@ -4,10 +4,13 @@ CFLAGS = -g
 SRCDIR = src
 OUTDIR = out
 
-LIBDIR = src/lib
+LIBDIR = $(SRCDIR)/lib
 LIBFILES = $(wildcard $(LIBDIR)/*.c)
 
-EXERCICIOS = $(patsubst src/%/, %, $(dir $(wildcard src/*/ )))	
+EXERCICIOS = $(patsubst $(SRCDIR)/%/, %, $(dir $(wildcard $(SRCDIR)/*/ )))
+
+all:
+	make $(EXERCICIOS)
 
 # --- Regras para compilar listas e atividades específicas ---
 
