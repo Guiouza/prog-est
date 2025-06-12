@@ -21,10 +21,14 @@ Utilizando o Make:
 make lista-1
 ```
 
-Utilizando o NMake (Lembre-se de executar o comando usando o Developer Power Shell ou o Developer Command Prompt):
+Utilizando o NMSVC (Lembre-se de executar o comando usando o Developer Power Shell ou o Developer Command Prompt):
 ```pwsh
 # Execute esse comando na raiz do projeto
-nmake lista-1
+mkdir out\lista-1
+# Compilar a atividade
+cl.exe src\lista-1\convert_to_int.c /Feout\lista-1\convert_to_int
+cl.exe src\lista-1\int_to_any_base.c /Feout\lista-1\int_to_any_base
+cl.exe src\lista-1\float_to_any_base.c /Feout\lista-1\float_to_any_base
 ```
 
 > [!WARNING]
