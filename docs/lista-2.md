@@ -22,10 +22,16 @@ Utilizando o Make:
 make lista-2
 ```
 
-Utilizando o NMake (Lembre-se de executar o comando usando o Developer Power Shell ou o Developer Command Prompt):
+Utilizando o MSVC (Lembre-se de executar o comando usando o Developer Power Shell ou o Developer Command Prompt):
 ```pwsh
 # Execute esse comando na raiz do projeto
-nmake lista-2
+mkdir out\lista-2
+# Compilar a atividade
+cl.exe src\lista-2\baskara.c src\lib\mymath.c /Isrc\lib /Feout\lista-2\baskara
+cl.exe src\lista-2\e_primo.c src\lib\mymath.c /Isrc\lib /Feout\lista-2\e_primo
+cl.exe src\lista-2\mdc.c /Feout\lista-2\mdc
+cl.exe src\lista-2\menor_e_maior.c /Feout\lista-2\menor_e_maior
+cl.exe src\lista-2\triangulo.c /Feout\lista-2\triangulo
 ```
 
 > [!WARNING]

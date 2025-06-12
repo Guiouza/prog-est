@@ -25,10 +25,19 @@ Utilizando o Make:
 make lista-3
 ```
 
-Utilizando o NMake (Lembre-se de executar o comando usando o Developer Power Shell ou o Developer Command Prompt):
+Utilizando o MSVC (Lembre-se de executar o comando usando o Developer Power Shell ou o Developer Command Prompt):
 ```pwsh
 # Execute esse comando na raiz do projeto
-nmake lista-3
+mkdir out\lista-3
+# Compilar a atividade
+cl.exe src\lista-3\cosseno.c /Feout\lista-3\cosseno
+cl.exe src\lista-3\fatorial.c /Feout\lista-3\fatorial
+cl.exe src\lista-3\pi.c src\lib\mymath.c /Isrc\lib /Feout\lista-3\pi
+cl.exe src\lista-3\produto_escalar.c /Feout\lista-3\produto_escalar
+cl.exe src\lista-3\soma_dos_naturais /Feout\lista-3\soma_dos_naturais
+cl.exe src\lista-3\soma_em_diagonal /Feout\lista-3\soma_em_diagonal
+cl.exe src\lista-3\soma_fracoes_de_2eN src\lib\mymath.c /Isrc\lib /Feout\lista-3\soma_fracoes_de_2eN
+cl.exe src\lista-3\soma_vetores /Feout\lista-3\soma_vetores
 ```
 
 > [!WARNING]

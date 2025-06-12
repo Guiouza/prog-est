@@ -1,13 +1,13 @@
-# Resolução da Lista - 3
+# Resolução da Atividade 2 P2
 
 ## Arquivos
 Arquivos associados à atividade 2 P2:
 
 | Exercício | Programa em C |
 | :- | :- |
-| Programa do administrador | [`src/atividade-2-P2/admin.c`](/src/atividade-2-P2/admin.c) |
-| Programa de votação do usuário | [`src/atividade-2-P2/user.c`](/src/atividade-2-P2/user.c) |
-| Programa de apuração | [`src/atividade-2-P2/apuracao.c`](/src/atividade-2-P2/apuracao.c) |
+| Programa do administrador | [`src/atividades/atividade-2-P2/admin.c`](/src/atividades/atividade-2-P2/admin.c) |
+| Programa de votação do usuário | [`src/atividades/atividade-2-P2/user.c`](/src/atividades/atividade-2-P2/user.c) |
+| Programa de apuração | [`src/atividades/atividade-2-P2/apuracao.c`](/src/atividades/atividade-2-P2/apuracao.c) |
 
 > [!NOTE]
 > Os arquivos foram nomeados de modo arbitrário.
@@ -20,10 +20,14 @@ Utilizando o Make:
 make atividade-2-P2
 ```
 
-Utilizando o NMake (Lembre-se de executar o comando usando o Developer Power Shell ou o Developer Command Prompt):
+Utilizando o MSVC (Lembre-se de executar o comando usando o Developer Power Shell ou o Developer Command Prompt):
 ```pwsh
 # Execute esse comando na raiz do projeto
-nmake atividade-2-P2
+mkdir out\atividade-2-P2
+# Compilar a atividade
+cl.exe src\atividades\atividade-2-P2\admin.c /Foout\atividade-2-P2\admin
+cl.exe src\atividades\atividade-2-P2\user.c /Foout\atividade-2-P2\user
+cl.exe src\atividades\atividade-2-P2\apuracao.c /Foout\atividade-2-P2\apuracao
 ```
 
 > [!WARNING]
