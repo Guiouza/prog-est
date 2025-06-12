@@ -5,11 +5,11 @@ Abaixo estão listados os exercícios e os arquivos a eles associados:
 
 | Exercício | Programa em C |
 | :- | :- | 
-| Exercício 1 | [`src/lista-2/baskara.c`](/src/lista-2/baskara.c) |
-| Exercício 2 | [`src/lista-2/menor_e_maior.c`](/src/lista-2/menor_e_maior.c) |
-| Exercício 3 | [`src/lista-2/triangulo.c`](/src/lista-2/triangulo.c) |
-| Exercício 4 | [`src/lista-2/mdc.c`](/src/lista-2/mdc.c) |
-| Exercício 5 | [`src/lista-2/e_primo.c`](/src/lista-2/e_primo.c) |
+| Exercício 1 | [`src/atividades/lista-2/baskara.c`](/src/atividades/lista-2/baskara.c) |
+| Exercício 2 | [`src/atividades/lista-2/menor_e_maior.c`](/src/atividades/lista-2/menor_e_maior.c) |
+| Exercício 3 | [`src/atividades/lista-2/triangulo.c`](/src/atividades/lista-2/triangulo.c) |
+| Exercício 4 | [`src/atividades/lista-2/mdc.c`](/src/atividades/lista-2/mdc.c) |
+| Exercício 5 | [`src/atividades/lista-2/e_primo.c`](/src/atividades/lista-2/e_primo.c) |
 
 > [!NOTE]
 > Os arquivos foram nomeados de modo arbitrário.
