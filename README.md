@@ -4,11 +4,15 @@ Esse projeto foi criado para armazenar as soluções dos exercícios do curso 21
 ## Arquivos
 
 | Listas e Aulas | Diretório |
-| :- | :- | 
-| Lista - 1 | [src/lista-1/](docs/lista-1.md) |
-| Lista - 2 | [src/lista-2/](docs/lista-2.md) |
-| Lista - 3 | [src/lista-3/](docs/lista-3.md) |
-| Atividade - 2 P2 | [src/atividade-2-P2/](docs/atividade-2-P2.md) |
+| :- | :- |
+| Lista - 1 | [src/atividades/lista-1/](docs/lista-1.md) |
+| Lista - 2 | [src/atividades/lista-2/](docs/lista-2.md) |
+| Lista - 3 | [src/atividades/lista-3/](docs/lista-3.md) |
+| Atividade - 1 P2 | [src/atividades/atividade-1-P2/](docs/atividade-1-P2.md) |
+| Atividade - 2 P2 | [src/atividades/atividade-2-P2/](docs/atividade-2-P2.md) |
+| Atividade - 3 P2 | [src/atividades/atividade-3-P2/](docs/atividade-3-P2.md) |
+| Atividade - 5 P2 | [src/atividades/atividade-5-P2/](docs/atividade-5-P2.md) |
+| Atividade - 6 P2 | [src/atividades/atividade-6-P2/](docs/atividade-6-P2.md) |
 
 ## Sobre o DEV-C++
 Não recomendo o uso dessa IDE, é possível utilizá-la sim para abrir os arquivos `.c` e compilálos individualmente. Mas há problemas quanto ao uso de caracteres utf-8 e sobre a versão do C11 e C99 que eu não sei como resolver.
@@ -57,13 +61,11 @@ Veja o link da lista a qual queira testar [aqui](#arquivos).
 ### Utilizando o VS Code e MSVC
 
 Abra o Developer Command Prompt ou o Developer Power Shell na pasta do projeto.
-O pacote do MSVC não possui a ferramenta `make`, mas sim uma alternativa chamada `nmake`.
-Execute o comando:
+O pacote do MSVC não possui a ferramenta `make`, então é necessário compilar os programar manualmente.
 
 ```pwsh
-nmake <nome_da_lista_de_exercicios>
+cl src\atividades\<atividade>\<arquivo>.c src\atividades\lib\*.c /Isrc\lib /Foout\<atividade>\<executavel>
 ```
 
-Por exemplo, o comando `nmake lista-1` compila os exercícios da lista-1.
 Novamente, cada lista tem uma documentação com as instruções próprias para compilação e execução.
 Veja o link da lista a qual queira testar [aqui](#arquivos).
