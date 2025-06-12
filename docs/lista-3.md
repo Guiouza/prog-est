@@ -5,14 +5,14 @@ Abaixo estão listados os exercícios e os arquivos a eles associados:
 
 | Exercício | Programa em C |
 | :- | :- |
-| Exercício 1 | [`src/lista-3/fatorial.c`](/src/lista-3/fatorial.c) |
-| Exercício 2 | [`src/lista-3/soma_dos_naturais.c`](/src/lista-3/soma_dos_naturais.c) |
-| Exercício 3 | [`src/lista-3/soma_em_diagonal.c`](/src/lista-3/soma_em_diagonal.c) |
-| Exercício 4 | [`src/lista-3/soma_fracoes_de_2eN.c`](/src/lista-3/soma_fracoes_de_2eN.c) |
-| Exercício 5 | [`src/lista-3/pi.c`](/src/lista-3/pi.c) |
-| Exercício 6 | [`src/lista-3/cosseno.c`](/src/lista-3/cosseno.c) |
-| Exercício 7 | [`src/lista-3/soma_vetores.c`](/src/lista-3/soma_vetores.c) |
-| Exercício 8 | [`src/lista-3/produto_escalar.c`](/src/lista-3/produto_escalar.c) |
+| Exercício 1 | [`src/atividades/lista-3/fatorial.c`](/src/atividades/lista-3/fatorial.c) |
+| Exercício 2 | [`src/atividades/lista-3/soma_dos_naturais.c`](/src/atividades/lista-3/soma_dos_naturais.c) |
+| Exercício 3 | [`src/atividades/lista-3/soma_em_diagonal.c`](/src/atividades/lista-3/soma_em_diagonal.c) |
+| Exercício 4 | [`src/atividades/lista-3/soma_fracoes_de_2eN.c`](/src/atividades/lista-3/soma_fracoes_de_2eN.c) |
+| Exercício 5 | [`src/atividades/lista-3/pi.c`](/src/atividades/lista-3/pi.c) |
+| Exercício 6 | [`src/atividades/lista-3/cosseno.c`](/src/atividades/lista-3/cosseno.c) |
+| Exercício 7 | [`src/atividades/lista-3/soma_vetores.c`](/src/atividades/lista-3/soma_vetores.c) |
+| Exercício 8 | [`src/atividades/lista-3/produto_escalar.c`](/src/atividades/lista-3/produto_escalar.c) |
 
 > [!NOTE]
 > Os arquivos foram nomeados de modo arbitrário.
